@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Oxanium:wght@300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;400&family=Lexend+Deca&display=swap");
+
+body {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Define a altura do body para ocupar a altura total da janela do navegador */
+}
+div > p {
+  font-size: 15px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  line-height: 30px;
+  color: white;
+}
+h1 {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+}
+button {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-radius: 15px;
+  border-width: 1px;
+  width: 120px;
+  padding: 10px;
+  border-style: solid;
+  margin-bottom: 0px;
+  margin-top: 80px;
+  margin-left: 60px;
+}
+
+img {
+  margin-top: 30px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 900px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: auto;
+  grid-column-gap: 0px; /* Espaço de 15 pixels entre as colunas */
+  width: 850px;
+  height: 500px;
+  padding: 20px;
+}
+.grid1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 20px;
+  border-radius: 15px 0px 0px 15px;
+}
+.grid2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 20px;
+}
+.grid3 {
+  background-color: hsl(179, 100%, 13%);
+  padding: 20px;
+  border-radius: 0px 15px 15px 0px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr; /* 1 coluna quando a tela for menor que 900px */
+    grid-row-gap: 20px; /* Espaço de 20 pixels entre as linhas */
+    width: 100%; /* Largura ocupando toda a tela */
+  }
+
+  .grid1,
+  .grid2,
+  .grid3 {
+    width: 100%; /* Largura ocupando toda a tela */
+  }
+
+  /* Estilos adicionais para melhorar a visualização em telas menores */
+  .grid1,
+  .grid2,
+  .grid3 {
+    border-radius: 15px; /* Manter o mesmo raio de borda para colunas em telas menores */
+    padding: 10px; /* Reduzir o espaço interno para melhor ajuste em telas menores */
+  }
+
+  .grid1 h1,
+  .grid2 h1,
+  .grid3 h1,
+  .grid1 p,
+  .grid2 p,
+  .grid3 p {
+    font-size: 14px; /* Reduzir o tamanho da fonte para melhor ajuste em telas menores */
+  }
+
+  button {
+    margin-top: 30px; /* Reduzir a margem superior para melhor ajuste em telas menores */
+  }
+}
